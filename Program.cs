@@ -142,6 +142,12 @@ namespace UdemyBiz
             Console.WriteLine(yesterday.ToLongTimeString());
             Console.WriteLine(yesterday.ToShortTimeString());
 
+            //TimeSpan :
+            var timespan = new TimeSpan(1, 2, 3);
+            Console.WriteLine("Total time in minutes: " + timespan.TotalMinutes);
+            Console.WriteLine("Add Time example: " + timespan.Add(TimeSpan.FromMinutes(8)));
+            Console.WriteLine("Converting to string: " + timespan.ToString());
+            Console.WriteLine("Parse : " + TimeSpan.Parse("01:02:03"));
 
         }
 
