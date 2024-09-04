@@ -126,6 +126,23 @@ namespace UdemyBiz
 
             var numbers = new List<int>() { 1, 2, 3, 4 };
 
+            //Date and Time usage :
+            var dateTime = new DateTime(2024, 1, 1);
+            var now = DateTime.Now;
+            var Today = DateTime.Today;
+
+            Console.WriteLine("Hour is: " + now.Hour);
+            Console.WriteLine("Minute is: " + now.Minute);
+
+            var tomorrow = now.AddDays(1);
+            var yesterday = now.AddDays(-1);
+
+            Console.WriteLine(tomorrow.ToLongDateString());
+            Console.WriteLine(tomorrow.ToShortDateString());
+            Console.WriteLine(yesterday.ToLongTimeString());
+            Console.WriteLine(yesterday.ToShortTimeString());
+
+
         }
 
 
