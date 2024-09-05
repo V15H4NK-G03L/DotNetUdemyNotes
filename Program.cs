@@ -149,6 +149,15 @@ namespace UdemyBiz
             Console.WriteLine("Converting to string: " + timespan.ToString());
             Console.WriteLine("Parse : " + TimeSpan.Parse("01:02:03"));
 
+            //Strings :
+            var strName = "Hello World";
+            var index = strName.IndexOf(' ');
+            var firstName = strName.Substring(0, index);
+            var lastName = strName.Substring(index + 1);
+            Console.WriteLine("First name is: " + firstName);
+            Console.WriteLine("Last name is : " + lastName);
+
+            Console.WriteLine(strName.Replace("Hello", "h3110"));
         }
 
 
