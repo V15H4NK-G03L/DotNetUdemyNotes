@@ -176,16 +176,26 @@ namespace UdemyBiz
             Console.WriteLine(builder);
 
             //File.Create(@"C:\Users\user1\Desktop\HACKED.py");
-            var fileinfo = new FileInfo(@"C:\Users\user1\Desktop\HACKEDAGAIN.py");
-            using (FileStream fileStream = fileinfo.Create())
-            {
-                //To open and close the filestream so the file can be created and deleted in the same process.
-            }
-            Console.WriteLine("File created successfully!");
-            fileinfo.Delete();
-            Console.WriteLine("File deleted successfully!");
-            Console.WriteLine("2 Files Created. 1 File deleted.");
+            //var fileinfo = new FileInfo(@"C:\Users\user1\Desktop\HACKEDAGAIN.py");
+            //using (FileStream fileStream = fileinfo.Create())
+            //{
+            //    //To open and close the filestream so the file can be created and deleted in the same process.
+            //}
+            //Console.WriteLine("File created successfully!");
+            //fileinfo.Delete();
+            //Console.WriteLine("File deleted successfully!");
+            //Console.WriteLine("2 Files Created. 1 File deleted.");
 
+            //Directory.CreateDirectory(@"C:\Users\user1\Desktop\HACKEDAGAIN");
+            //var directories = Directory.GetDirectories(@"C:\Users\user1\Desktop", "*.*", SearchOption.AllDirectories);
+            //foreach(var directory in directories )
+            //    Console.WriteLine(directory);
+
+            //var path = @"C:\Users\user1\Desktop\test.txt";
+            //Console.WriteLine("The extension is: " + Path.GetExtension(path));
+            //Console.WriteLine("The file name is: " + Path.GetFileName(path));
+            //Console.WriteLine("The file name without extension is: " + Path.GetFileNameWithoutExtension(path));
+            //Console.WriteLine("The directory name is: " + Path.GetDirectoryName(path));
 
         }
 
