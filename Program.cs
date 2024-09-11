@@ -174,6 +174,19 @@ namespace UdemyBiz
             
             
             Console.WriteLine(builder);
+
+            //File.Create(@"C:\Users\user1\Desktop\HACKED.py");
+            var fileinfo = new FileInfo(@"C:\Users\user1\Desktop\HACKEDAGAIN.py");
+            using (FileStream fileStream = fileinfo.Create())
+            {
+                //To open and close the filestream so the file can be created and deleted in the same process.
+            }
+            Console.WriteLine("File created successfully!");
+            fileinfo.Delete();
+            Console.WriteLine("File deleted successfully!");
+            Console.WriteLine("2 Files Created. 1 File deleted.");
+
+
         }
 
 
