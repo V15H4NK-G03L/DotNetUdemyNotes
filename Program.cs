@@ -171,20 +171,9 @@ namespace UdemyBiz
             builder.Replace('-', '*')
                     .Remove(0, 10)
                     .Insert(0, new string('+', 10));
-
+            
+            
             Console.WriteLine(builder);
-
-
-            //File.Create(@"C:\Users\visha\Desktop\HACKED.py");
-            var fileinfo = new FileInfo(@"C:\Users\visha\Desktop\HACKEDAGAIN.py");
-            using (FileStream fileStream = fileinfo.Create())
-            {
-                //To open and close the filestream so the file can be created and deleted in the same process.
-            }
-            Console.WriteLine("File created successfully!");
-            fileinfo.Delete();
-            Console.WriteLine("File deleted successfully!");
-            Console.WriteLine("2 Files Created. 1 File deleted.");
         }
 
 
