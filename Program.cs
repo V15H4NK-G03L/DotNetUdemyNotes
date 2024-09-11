@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Text;
 using UdemyBiz.Math;
 
 namespace UdemyBiz
@@ -158,6 +159,20 @@ namespace UdemyBiz
             Console.WriteLine("Last name is : " + lastName);
 
             Console.WriteLine(strName.Replace("Hello", "h3110"));
+
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            builder.AppendLine();
+            builder.Append("Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+
+            builder.Replace('-', '*')
+                    .Remove(0, 10)
+                    .Insert(0, new string('+', 10));
+            
+            
+            Console.WriteLine(builder);
         }
 
 
