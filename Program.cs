@@ -86,17 +86,18 @@ namespace UdemyBiz
             }
 
 
-            //Random password Generator
-            var random = new Random();
+            //Random Password Generator(RPG)///////////////////////////////////////////////////////
+
+            Console.WriteLine();
+            Console.WriteLine("Please enter the desired length of password : ");
+            //int passwordLength = Console.Read();
             const int passwordLength = 10;
-            var buffer = new char[passwordLength];
-
-            for(var i=0; i<passwordLength; i++)
-                buffer[i] = (char)('a' + random.Next(0, 26));
-
-            var randomPassword = new string(buffer);
-
+            var randomPassword = GenerateRandomPassword(passwordLength);
             Console.WriteLine("Your one time use unique password is: " + randomPassword);
+            Console.WriteLine("The length of your unique password is: " + randomPassword.Length);
+            Console.WriteLine();
+
+            /////////////////////////////////////////////////////////////////////////////////
 
 
             var matrix = new int[2, 4]
@@ -175,6 +176,18 @@ namespace UdemyBiz
             Console.WriteLine(builder);
         }
 
+
+        public static string GenerateRandomPassword(int passwordLength)
+        {
+            var random = new Random();
+            var buffer = new char[passwordLength];
+
+            for (var i = 0; i < passwordLength; i++)
+                buffer[i] = (char)('a' + random.Next(0, 26));
+
+            var randomPassword = new string(buffer);
+            return randomPassword;
+        }
 
     }
 
