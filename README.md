@@ -1,3 +1,3 @@
 # UdemyBiz
 
-My Learnings of Mosh Hamedani's C# Udemy Course
+My Learnings of Mosh Hamedani's C# Fundamentals Udemy Course
